@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciachownia</title>
+    <link rel="stylesheet" href="Ciachownia.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.5/dist/locomotive-scroll.min.css">
+    <script src="https://kit.fontawesome.com/51fdb09e8d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    
+
+    <header class="header">
+        <div class="logocontent">
+            <a href="#" class="logo"><img src="Images/ciachownia-logo-without-background.png" alt=""></a>
+            <h1 class="logoname"></h1>
+
+        </div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Strona główna</a>
+            <a href="#product">Produkty</a>
+            <a href="#blogs">Blogi</a>
+            <a href="#review">Oceny</a>
+            <a href="#Location">Lokalizacja</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            <i class="fa-solid fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+
+        </div>
+    </header>
+
+    <div data-scroll-container>
+    <!--END OF HEADER SECTION -->
+
+    <!--START OF HOME SECTION-->
+    
+    <section class="home" id="home">
+        <div class="spacer layer-home">
+        <div class="homeContent">
+            <h2>Dla każdego coś wyjątkowego</h2>
+            <p>Zapraszamy do "krainy słodkości!" Nasza cukiernia,
+                istniejąca już od ponad dekady, Tworzy wyjątkowe ciastka z serca 
+                Oferujemy rozmaite smaki - od kruchych czekoladowych ciastek , aż po maślane ,
+                torty dopasowane do preferencji oraz klerki i makaroniki,
+                które podbiją serce nawet najbardziej wyrafinowanych koneserów słodkości. </p>
+            <div class="home-btn">
+                <a href="#product"><button>Zobacz więcej</button></a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="spacer layer-product"></div>
+
+
+    <!-- product section start here  -->
+    <div class="background-products">TEST</div>
+<div class="container-product" id="product">
+    <section class="product">
+        <div class="heading">
+            <h2>Nasze Speciały</h2>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/jagodzianki.webp" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Jagodzianka</h3>
+                        <p>Jagodzianki "ze złota",
+                             wypełnione aż bo brzegi świeżymi jagodami idealne na drugie śniadanie
+                        </p>
+                        <div class="orderNow">
+                            <button>Zobacz Więcej</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="Images/makaroniki-better-quality.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Makaroniki</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci reiciendis assumenda.
+                        </p>
+                        <div class="orderNow">
+                            <button>Zobacz Więcej</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="Images/klerki.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Klerki</h3>
+                        <p>Tort Urodzinowy , Dostępny w wybranych smakach , kolorach i wielkościach"
+                        </p>
+                        <div class="orderNow">
+                            <button>Zobacz Więcej</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="Images/Rogale-better-quality.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Rogale</h3>
+                        <p>Tradycyjne rogaliki marcińskie z nadzieniem maku, skropione delikatnym lukrem.
+                        </p>
+                        <div class="orderNow">
+                            <button>Zobacz Więcej</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <div class="spacer layer-product flip"></div>
+
+
+    <!--end of product section-->
+<div class="container-blogs" id="blogs">
+    <section class="blogs" >
+        <div class=" swiper blogs-row">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="Images/Blogs-tort-ślubny-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Torty Weselne / Ślubne </h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
+                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
+                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
+                            eaque at.</p>
+                        <button class="blog-button-1"><a href="#blogs" class="btn">Zobacz więcej</a></button>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/tort-urodzinowy-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Torty Urodzinowe</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
+                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
+                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
+                            eaque at.</p>
+                        <button class="blog-button-1"><a href="#blogs" class="btn">Zobacz więcej</a></button>
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/Blogs-monoporcjie-better-quality.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Monoporcje</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
+                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
+                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
+                            eaque at.</p>
+                        <button class="blog-button-1"><a href="#blogs" class="btn">Zobacz więcej</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+
+        </div>
+    </section>
+</div>
+
+    <!--Blog Section-->
+
+    <!--newsletter section start here-->
+
+    <section class="newsletter">
+        <form action="">
+            <h3 id="h3">Obserwuj , aby być na bieżąco</h3>
+            <!--<input type="email" name="" placeholder="Enter your Email" id="" class="box">-->
+            
+            <div class="img">
+                <img src="Images/cloud-nobackground.png" alt="" id="cloud">
+                <a href="https://www.facebook.com/ciachownia?locale=pl_PL" target="_blank"><img src="Images\facebook.png"  alt="" id="facebook-cloud" ></a>
+                <a href="https://www.instagram.com/ciachowniaa/" target="_blank"><img src="Images\instagram.png" alt="" id="instagram-cloud"></a>
+            </div>
+            
+            
+
+            <!--<input type="button" value="Subskrybuj" class="box2">-->
+        </form>
+    </section>
+
+    <!--newsletter section ENDS here-->
+
+
+    <!--review section start here-->
+<div class="container-review" id="review">
+    
+    <section class="review">
+        <div class="spacer layer-review"></div>    
+        <div class="heading-review">
+            <img src="Images/king.png" alt="" class="crown-icon">
+            <h2>Co Sądzą o nas Klienci</h2>
+        </div>
+        <div class="swiper review-row">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Rewelacja! Polecam z całego serca! Ciasta wspaniałe i obsługa przemiła!
+                            W końcu zjadłem pyszne i naturalne ciasto bez ulepszaczy i sztucznych zamachów i barwników.
+                             Polecam! 👍</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="Images/p3.jpg" alt="">
+                        </div>
+                        <div class="clientDetails">
+                            <h3>Jakub Wiśniewski</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Pierwszy raz korzystaliśmy z usług Ciachowni i od razu był to tort weselny.
+                             Pani Agnieszka wraz z załogą bardzo profesjonalnie podeszła do wszystkich naszych próśb, wymagań. Efekt był fenomenalny😃.
+                             Wszyscy goście zachwalali się smakiem i przybraniem😃 ❤️</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="Images/p2v1.webp" alt="">
+                        </div>
+                        <div class="clientDetails">
+                            <h3>Anna Olszewska</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Ciachownia - bardzo przyjemne miejsce, dobra kawa,
+                             pyszne słodkości, dziecko wybawione w sali zabaw.
+                             Przemiła obsługa! Z pewnością będziemy wracać 🤩</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="Images/p1v1.jpg" alt="">
+                        </div>
+                        <div class="clientDetails">
+                            <h3>Kasia Kubiak</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Po raz kolejny Ciachownia udowodniła, że nie ma sobie równych.
+                             Każda słodycz dopieszczona smakowo i estetycznie.
+                             Serdecznie Polecamy!😊😊</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="Images/p4.jpg" alt="">
+                        </div>
+                        <div class="clientDetails">
+                            <h3>Katarzyna Jabłońska</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--Review Section ENDS Here-->
+</div>
+
+<div class="container-map" id="Location">
+    <section class="map" >
+        <div class="underline">
+            <div class="map-heading">
+                <h2>Tu nas Znajdziesz</h2>
+            </div>
+        </div>
+        <div class="google-map">
+            <iframe
+                width="1250"
+                height="650"
+                frameborder="0"
+                style="border:0"
+                src="https://www.google.com/maps/d/u/0/embed?mid=1osue6FqQkK1lxxJZN5QGiA0Io9O28o8&ehbc=2E312F&noprof=1"
+                allowfullscreen
+            ></iframe>
+        </div>
+        <div class="container">
+        <div class="schedule">
+            <div class="Open-hours">Godziny Otwarcia</div>
+            <table>
+                <tr>
+                    <th>Dni</th>
+                    <th>Godziny</th>
+                </tr>
+                <tr>
+                    <td>Poniedziałek - Piątek</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+
+                    <td>Sobota - Niedziela</td>
+                    <td>10:00 - 15:00</td>
+                </tr>
+                <!-- Add more rows for other days -->
+            </table>
+        </div>
+    </div>
+    </section>
+
+    </section>
+</div>
+
+
+
+    <!--Footer Section STARTS Here-->
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#">
+                        <img src="Images/ciachownia-logo-without-background.png" alt="">
+                    </a>
+                </div>
+                <p>Ciachownia słodkich marzeń istnieje już od ponad dekady, doskonała w sztuce cieszenia podniebień.
+                     Nasze ciastka są jak małe kawałki raju, a klerki i bezy to nasza specjalność.Delikatność,
+                     aromat i smak skradną serca każdego łasucha.</p>
+            </div>
+            <div class="box">
+                <h3>Menu</h3>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Strona główna</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Produkty</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Na zamówienie</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Oceny</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Kontakt</a>
+            </div>
+            <div class="box">
+            <h3>Informacje</h3>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Polityka prywatności</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Nasze Usługi</a>
+            </div>
+            <div class="box">
+                <h3>Kontakt</h3>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>609 540 355</a>
+                <a href="#"><i class="fa-solid fa-arrow-right" id="email"></i>ciachownia@wp.pl</a>
+            </div>    
+            </div>
+            <div class="share">
+                <a href="https://www.facebook.com/ciachownia?locale=pl_PL" target="_blank" class="fa-brands fa-facebook-f"></a>
+                <a href="https://www.instagram.com/ciachowniaa/" target="_blank" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-youtube"></a>
+            </div>
+            <div class="credit">
+                Strona Stworzona przez <span>Jakub Gacka </span> &copy; Wszelkie Prawa Zastrzeżone
+            </div>
+    </footer>
+
+
+</div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.5/dist/locomotive-scroll.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="Ciachownia.js"></script>
+
+    <!-- Place this at the end of your HTML body -->
+   
+
+  
+
+</body>
+</html>
