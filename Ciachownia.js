@@ -1,5 +1,9 @@
+function redirectToCiachownia() {
+  window.open("Ciachownia2.html", "_blank");
+}
 
 
+//BOX-SHADOW ACTIVE ON
 
 document.addEventListener("DOMContentLoaded", function() {
   var header = document.querySelector(".header");
@@ -14,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+//PINK ACTIVE HEADER BUTTONS
 
 document.addEventListener('DOMContentLoaded', function() {
   // Get all your navigation links
@@ -37,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//LOCOMOTIVE SCROLL + HEADER SCROLLED FUTURE
+
 document.addEventListener('DOMContentLoaded', function () {
   const scrollContainer = document.querySelector('[data-scroll-container]');
   const scroll = new LocomotiveScroll({
@@ -47,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Handle navigation clicks
-  document.querySelectorAll('.navbar a, .home-btn a').forEach(element => {
+  document.querySelectorAll('.navbar a, .home-btn a, .box a').forEach(element => {
       element.addEventListener('click', function (e) {
           e.preventDefault();
 
@@ -86,39 +93,77 @@ document.querySelector('#menu-bar').onclick=() =>{
 
 
 
+let sectionLinks = document.querySelectorAll('.home, .product, .blogs, .review, #Location, #contact, .newsletter');
+
+sectionLinks.forEach(section => {
+    section.onclick = () => {
+        document.querySelector('.navbar').classList.remove('active');
+    };
+});
+
+
+
+
+
 
 let search = document.querySelector('.search');
 document.querySelector('#search').onclick=() =>{
     search.classList.toggle('active');
-
 }
 
-var swiper = new Swiper(".product-row", {
-    slidesPerView: 1,
-    loop:true,
-    spaceBetween: 30,
-    centeredSlides:true,
-    /*autoplay:{
-        delay:9500,
-        disableOnInteraction:false
-    },
-    */
-    pagination: {
+
+
+
+
+
+
+
+
+
+/*
+
+document.addEventListener('click', function (event) {
+  var navbar = document.querySelectorAll('.header .navbar');
+  var sections = document.querySelectorAll('section');
+
+  if (sections.contains(event.target)) {
+      // Clicked inside the navbar
+      navbar.forEach(function (navbar) {
+          navbar.style.display = 'none';
+      });
+  }
+});
+
+
+
+*/
+
+
+
+var swiper = new Swiper('.product-row', {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 60,
+  centeredSlides: false,  // Set to false
+  pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },
-    breakpoints: {
+  },
+  breakpoints: {
       0: {
-        slidesPerView: 1,
+          slidesPerView: 1,
       },
       768: {
-        slidesPerView: 2,
+          slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 3,
+          slidesPerView: 3,
       },
-    },
-  });
+  },
+});
+
+
+
 
 var swiper = new Swiper(".blogs-row", {
     loop:true,
@@ -134,8 +179,8 @@ var swiper = new Swiper(".blogs-row", {
       clickable: true,
     },
     navigation:{
-        nextE1 :".swiper-button-next",
-        prevE1 :".swiper-button-prev",
+        nextEl :".swiper-button-next",
+        prevEl :".swiper-button-prev",
     
     },
     breakpoints: {
@@ -155,7 +200,7 @@ var swiper = new Swiper(".blogs-row", {
     slidesPerView: 1,
     loop:true,
     spaceBetween: 30,
-    centeredSlides:true,
+    centeredSlides:false,
     /*autoplay:{
         delay:9500,
         disableOnInteraction:false
