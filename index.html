@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciachownia</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="Ciachownia.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.5/dist/locomotive-scroll.min.css">
     <script src="https://kit.fontawesome.com/51fdb09e8d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Ciachownia2.html">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
 
 </head>
 
@@ -67,7 +69,10 @@
 
 
     <!-- product section start here  -->
-    <div class="background-products">TEST</div>
+<div class="background-products">TEST</div>
+
+
+
 <div class="container-product" id="product">
     <section class="product">
         <div class="heading">
@@ -75,9 +80,12 @@
         </div>
         <div class="swiper product-row">
             <div class="swiper-wrapper">
+
                 <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="Images/jagodzianki.webp" alt="">
+                    <div class="image-container">
+                        <div class="img">
+                            <img src="images/jagodzianki.webp" alt="">
+                        </div>
                     </div>
                     <div class="product-content">
                         <h3>Jagodzianka</h3>
@@ -85,46 +93,55 @@
                              wypełnione aż bo brzegi świeżymi jagodami idealne na drugie śniadanie
                         </p>
                         <div class="orderNow">
-                            <button>Zobacz Więcej</button>
+                            <button onclick="redirectToCiachownia()">Zobacz Więcej</button>
                         </div>
                     </div>
                 </div>
+
                 <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="Images/makaroniki-better-quality.jpg" alt="">
+                    <div class="image-container">
+                        <div class="img">
+                            <img src="Images/makaroniki-better-quality.jpg" alt="">
+                        </div>
                     </div>
                     <div class="product-content">
                         <h3>Makaroniki</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci reiciendis assumenda.
                         </p>
                         <div class="orderNow">
-                            <button>Zobacz Więcej</button>
+                            <button onclick="redirectToCiachownia()">Zobacz Więcej</button>
                         </div>
                     </div>
                 </div>
+
                 <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="Images/klerki.png" alt="">
+                    <div class="image-container">
+                        <div class="img">
+                            <img src="Images/klerki.png" alt="">
+                        </div>
                     </div>
                     <div class="product-content">
                         <h3>Klerki</h3>
                         <p>Tort Urodzinowy , Dostępny w wybranych smakach , kolorach i wielkościach"
                         </p>
                         <div class="orderNow">
-                            <button>Zobacz Więcej</button>
+                            <button onclick="redirectToCiachownia()">Zobacz Więcej</button>
                         </div>
                     </div>
                 </div>
+
                 <div class="swiper-slide box">
-                    <div class="img">
-                        <img src="Images/rogale-3.png" alt="">
+                    <div class="image-container">
+                        <div class="img">
+                            <img src="Images/rogale-3.png" alt="">
+                        </div>
                     </div>
                     <div class="product-content">
                         <h3>Rogale</h3>
                         <p>Tradycyjne rogaliki marcińskie z nadzieniem maku, skropione delikatnym lukrem.
                         </p>
                         <div class="orderNow">
-                            <button>Zobacz Więcej</button>
+                                <button onclick="redirectToCiachownia()">Zobacz Więcej</button>
                         </div>
                     </div>
                 </div>
@@ -133,7 +150,17 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
+</div>
     <div class="spacer layer-product flip"></div>
+    
+
+
+
+
+
+
+
+<div class="spacer layer-product flip"></div>
 
 
     <!--end of product section-->
@@ -359,11 +386,10 @@
             </div>
             <div class="box">
                 <h3>Menu</h3>
-                <a href="#"><i class="fa-solid fa-arrow-right"></i>Strona główna</a>
-                <a href="#"><i class="fa-solid fa-arrow-right"></i>Produkty</a>
-                <a href="#"><i class="fa-solid fa-arrow-right"></i>Na zamówienie</a>
-                <a href="#"><i class="fa-solid fa-arrow-right"></i>Oceny</a>
-                <a href="#"><i class="fa-solid fa-arrow-right"></i>Kontakt</a>
+                <a href="#home"><i class="fa-solid fa-arrow-right"></i>Strona główna</a>
+                <a href="#product"><i class="fa-solid fa-arrow-right"></i>Produkty</a>
+                <a href="#blogs"><i class="fa-solid fa-arrow-right"></i>Na zamówienie</a>
+                <a href="#review"><i class="fa-solid fa-arrow-right"></i>Oceny</a>
             </div>
             <div class="box">
             <h3>Informacje</h3>
@@ -394,6 +420,7 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.5/dist/locomotive-scroll.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
 
     <script src="Ciachownia.js"></script>
 
