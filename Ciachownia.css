@@ -56,19 +56,23 @@ html::-webkit-scrollbar-thumb{
 
 }
 
+
+
+
+
 .header{
 
-    transition: box-shadow 0.3s ;
-    top: 0; right: 0;left: 0;
+    transition: box-shadow 0.3s;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    padding: 1.4rem 7%;
+    padding: 1.4rem 5%; /* Adjusted padding for responsiveness */
     z-index: 999;
-    min-height: 10rem;
-    /*box-shadow: var(--box-shadow);*/
+    min-height: 8rem; /* Adjusted min-height for responsiveness */
+    width: 100%; /* Make the header full width */
+   
     
 }
 
@@ -86,14 +90,7 @@ html::-webkit-scrollbar-thumb{
     
 }
 
-.header .logocontent .logoname{
 
-    color: var(--black);
-    font-size: 3rem;
-    font-weight: bolder;
-
-
-}
 
 .header .navbar a{
 
@@ -154,10 +151,23 @@ html::-webkit-scrollbar-thumb{
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 #menu-bar{
 
     display: none;
 }
+
 .background-products{
     width: 100%;
     position: absolute;
@@ -454,8 +464,6 @@ html::-webkit-scrollbar-thumb{
    background-size: cover;
    background-position: center center;
    
-   
-   
 }
 
 .blogs .blogs-row .box  {
@@ -533,6 +541,8 @@ html::-webkit-scrollbar-thumb{
 .blogs .blogs-row .box .content button:hover{
     transform: scale(1.07);
 }
+
+
 
 
 
@@ -720,6 +730,7 @@ html::-webkit-scrollbar-thumb{
 
 
 /*MAP SECTION HERE*/
+
 .map {
     transform: translateY(13%);
 }
@@ -924,7 +935,369 @@ html::-webkit-scrollbar-thumb{
 
 
 
+@media (max-width:1300px){
 
+
+/*FOOTER SECTION STARTS HERE*/    
+    .footer .box-container{
+        height: 35vh;
+    }
+    
+    .footer .box-container .mainBox p{
+        font-size: 1.5rem;
+    }
+    .footer .box-container .box a{
+        display: block;
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+    .footer .credit{
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer .box-container img{
+        width: 100%;
+    }
+   
+
+/*MAP SECTION STARTS HERE*/
+    .map {
+        transform: translateY(13%);
+    }
+    .map-heading{
+        padding-top: 1rem;
+        font-size: 2rem;
+    }
+    .underline::after {
+        content: '';
+        display: inline-block;
+        width: 15%; /* Adjust to your desired underline length */
+        border-bottom: 0.3rem solid black;
+    }
+    .google-map{
+        padding: 2rem;
+      }
+    .google-map iframe{  
+        height: 70vh; 
+    }
+    .map {
+        transform: translateY(10%);
+        margin-bottom: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .schedule {
+        left: 77%;  
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+    .schedule .Open-hours{
+        font-size: 2.2rem;
+        margin-bottom: .1rem;
+    }
+      
+
+
+
+/*MAP SECTION STARTS HERE*/
+
+    .layer-review{
+        z-index: -1;
+        transform: translateY(20%) scale(1.2);
+        
+    }
+
+    .review .review-row{
+        margin-top: 1rem;
+        padding: 3rem;
+    }
+    .review .review-row .box{
+        padding: 3rem;
+    }
+
+    .review .review-row .box .client-review p{
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+    .review .review-row .box .client-info .img{
+        padding-right: 2.5rem;
+    }
+
+    .review .review-row .box .client-info .img img{
+    transform: scale(0.9);
+    }
+    .review .review-row .box .client-info .clientDetails h3{
+        font-size: 2rem;
+    }
+
+
+/*NEWSLETTER SECTION STARTS HERE*/
+
+    .newsletter{
+        height: 38vh;
+        padding: 1rem 3rem;
+    }
+    
+    .newsletter form{
+        padding: 0rem 0;
+
+    }
+    
+    
+    
+    .newsletter form h3{
+        font-size: 2.6rem;
+        margin-right: 6rem;
+    }
+    
+    
+    .newsletter form .img{
+        width: 80%;
+        height: 80%;
+    }
+
+
+
+/*BLOG SECTION STARTS HERE*/
+
+    .blogs{
+        background: url('layer-blog.svg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 90%;
+        
+     }
+
+        
+    .container-blogs{
+        height: 110vh;
+    
+    }
+
+    .blogs .blogs-row .box  {
+        border-radius: .7rem;
+        border: .01rem solid black;
+        padding: 5rem;
+        transform: translateY(11%) scale(1);
+    }
+
+    .blogs .blogs-row .box .img{
+
+        flex: 1 1 40rem;
+        width: 60rem; /* Set the width as needed */
+        height: 50rem; /* Set the height to accommodate the vertical length */
+    }
+
+    .blogs .blogs-row .box .content {
+        flex: 1 1 30rem;
+        padding: 2rem;
+        padding-bottom: 7rem; 
+    }
+
+    .blogs .blogs-row .box .content h3{
+        font-size: 2.5rem;
+    }
+
+    .blogs .blogs-row .box .content p{
+        font-size: 1.2rem;
+    }
+
+
+    .blogs .blogs-row .box .content a:hover{
+
+        color: var(--black);
+        text-shadow: var(--box-shadow);
+    }
+
+    .blogs .blogs-row .box .content .blog-button-1{
+        height: 3rem;
+        margin-top: 2rem;
+        margin-left: 10rem
+
+    }
+    .blogs .blogs-row .box .content button .btn{
+        font-size: 1.8rem;
+        border-radius: .7rem;
+        padding: .7rem 2rem;
+        cursor: pointer;
+    
+        
+    }
+    .blogs .blogs-row .box .content button:hover{
+        transform: scale(1.07);
+    }
+
+
+/*PRODUCT SECTION STARTS HERE*/
+
+
+
+    .product .product-row .box .image-container{
+        height: 15rem;
+        z-index: 2;
+    }
+        
+    .container-product{
+        min-height: 100vh;
+    }
+    .product{
+        transform: translateY(9%);
+        z-index: 891263;
+        
+    }
+
+    .product .product-row .box {
+
+        padding: 1.7rem;
+        gap: 1.5rem;
+        height: 37rem;
+    }
+
+
+    .product .product-row .img img {
+        width: 42%;
+        border-radius: 2%;
+        border: 1.1rem solid white;
+        object-fit: cover;
+        z-index: 2;
+
+    }
+
+    .product .product-row .img img:hover {
+        transform: scale(1.15) rotate(4deg);
+    }
+
+
+    .product .product-row .product-content h3 {
+        font-size: 3.5rem;
+    }
+
+    .product .product-row .product-content p {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    .product .product-row .product-content .orderNow button {
+        font-size: 1.3rem;
+        padding: .7rem 1.5rem;
+        transform: translateY(-50%);
+    }
+
+    .product .product-row .product-content .orderNow button:hover {
+        font-size: 1.5rem;
+    }
+    
+/*PRODUCT SECTION ENDS HERE*/
+
+    .layer-home{
+        background-image: url('layer1.svg');
+    
+    }
+    .layer-product{
+        position: absolute;
+        background-image: url('layer2.svg');
+        transform: translateY(-40%);
+        z-index: -1;
+       
+    }
+    .flip{
+        transform: translateY(-99%) rotate(180deg);
+    }
+    .home .homeContent{
+
+        width: 70%;
+        float: left;
+        text-align: center;
+        padding: 8rem;
+        transform: translateY(10%);
+        
+
+    }
+
+    .home .homeContent h2{
+
+        font-size: 5em;
+        margin-bottom: 1rem;
+        line-height: 6rem;
+        color: #201f2d;
+        text-shadow: var(--box-shadow);
+
+    }
+
+    .home .homeContent p{
+        font-size: 1.4rem;
+        line-height: 1.7;
+        font-weight: 600;
+        margin-bottom: 1.7rem;
+        color: rgb(255, 255, 255);
+    }
+
+
+    .home .homeContent .home-btn button{
+        font-size: 1.3rem;
+    } 
+        
+    .home .homeContent .home-btn button:hover{
+        font-size: 1.6rem;
+    }
+
+/*HEADER SECTION STARTS HERE*/
+    .header{
+        padding: .2rem 5%; 
+      
+    }
+    .header .logocontent .logo img{
+        position: absolute;
+        height: 13rem; 
+        transform: translateY(-45%);
+        display: flex;
+        align-items: center;
+        
+    }
+    .header .navbar{
+        margin-left: 25rem;
+    }
+    
+    
+    .header .navbar a{
+        font-size: 1.6rem;
+        margin-right: 2rem;
+        color: var(--black);
+        font-weight: bold;
+    
+    
+    }
+    
+    .header .navbar a:hover,
+    .header .navbar a.active {
+      border: .8rem solid #FF90C5;
+      border-radius: 1rem;
+    }
+    
+    .header .icon i{
+    
+        font-size: 1.6rem;
+        margin-right: 2rem;
+        color: var(--black);
+        cursor: pointer;
+    
+    }
+    
+    .header .search{
+        margin: 1.5rem 7%;
+        right: 0;
+        height: 5rem;
+    }
+    
+    .header .search input{
+        width: 80%;
+        height: 80%;
+        font-size: 1.2rem;
+        margin-left: 15rem;
+    }
+}
 
 
 /*media questions for web responsie*/
