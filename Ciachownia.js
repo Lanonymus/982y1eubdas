@@ -3,6 +3,10 @@ function redirectToCiachownia() {
 }
 
 
+
+
+
+
 //BOX-SHADOW ACTIVE ON
 
 document.addEventListener("DOMContentLoaded", function() {
